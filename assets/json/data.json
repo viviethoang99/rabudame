@@ -1,0 +1,184 @@
+{
+  "profile": [
+    {
+      "name": "Uenohara Ayano",
+      "classmate": "10-5",
+      "id_student": "6",
+      "character_color": "#fa98a2",
+      "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/61270708981e804da7dcf3ec_profile_ayano.jpg",
+      "birthday": "10/11",
+      "middle_schools": "Trường trung học Bắc Kyougoku",
+      "club": null,
+      "assess_suitability": "C",
+      "profile": "Một cô nàng lạnh lùng và bình thường đã bị cuốn vào 'Kế hoạch Rom-Com ngoài đời thực' của Kohei sau một tai nạn hi hữu. Thành tích học tập và khả năng thể dục đểu xuất sắc. Mặc dù đứng thứ 7 top hoa khôi cùng khoá nhưng cô ấy không phải “nữ chính” do không có năng lực hay tính cách nổi bật.",
+      "role": "Đồng phạm",
+      "radar_stat": {
+        "visual": 80,
+        "basic_competency": 80,
+        "personality": 60,
+        "behavioral": 60,
+        "speaking": 60
+      }
+    },
+    {
+      "name": "Kiyosato Mei",
+      "avatar": "https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/296153783_3344409719179309_807829053274045847_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WAZiWId1E-QAX_eLqeo&tn=18h-6FnEPAkzr9up&_nc_ht=scontent.fhan2-2.fna&oh=00_AT-2pCdPT7xwjrJx-CLesM5aLKPmnm14aDa_dMTdwR4GQw&oe=62FA08FA",
+      "classmate": "10-4",
+      "id_student": "10",
+      "character_color": "#d2b6ff",
+      "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/61270707cfff245ec7f5415d_profile_mei.jpg",
+      "birthday": "2/4",
+      "middle_schools": "Học viện Akagawa (ngoài tỉnh)",
+      "club": "Tennis",
+      "assess_suitability": "S",
+      "profile": "Là 'nữ chính' trong kế hoạch Rom-Com ngoài đời thực.\n\nCụm từ “yamato nameshiki” rất phù hợp để miêu tả cô nàng. Thế nhưng, về tính cách thì cô lại là một người vui vẻ, hoạt bát. Một thiên thần tươi tắn luôn tốt bụng với tất cả mọi người. Sở thích là đọc sách và điểm số môn Tiếng Nhật thuộc hàng top đầu. Hiện cô đang là thành viên của câu lạc bộ tennis. \n\nDo công việc của bố mẹ, Mei chuyển đến Kyougoku để học trung học và hằng ngày đi lại bằng xe buỷt.",
+      "role": "Nữ chính",
+      "radar_stat": {
+        "visual": 100,
+        "basic_competency": 100,
+        "personality": 100,
+        "behavioral": 100,
+        "speaking": 100
+      }
+    },
+    {
+      "name": "Katsunuma Ayumi",
+      "classmate": "10-4",
+      "id_student": "25",
+      "character_color": "#a8d8e6",
+      "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/612707074a79a42d9a7e9b8b_profile_ayumi.jpg",
+      "birthday": "2/12",
+      "middle_schools": "Trường trung học Shinonami",
+      "club": null,
+      "assess_suitability": "E",
+      "profile": "Học cùng lớp với Kohei, cô ấy là đại diện cho “những người không thích Rom-com” trong lớp.\n\nMột cô nàng thuộc tuýt gái Yankee quê mùa, bốc đồng và ích kỷ, cách nói chuyện và thái độ đều không duyên dáng chút nào. Mặc dù ngoại hình không tệ nhưng hành động của cô ấy là kiểu nhân vật điển hình chống lại mọi câu chuyện rôm-com. Ngay khi vừa nhập học, cậu ta đã tập hợp những nữ sinh có cùng kiểu với mình để lập ra bè phái lớn nhất trong lớp.",
+      "role": "Không rõ",
+      "radar_stat": {
+        "visual": 60,
+        "basic_competency": 20,
+        "personality": 20,
+        "behavioral": 20,
+        "speaking": 20
+      }
+    },
+    {
+      "name": "Hinoharu Sachi",
+      "classmate": "11-1",
+      "id_student": "25",
+      "character_color": "#f0a053",
+      "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/612707075c0c047735084282_profile_sachi.jpg",
+      "birthday": null,
+      "middle_schools": null,
+      "club": "Hội học sinh",
+      "assess_suitability": null,
+      "profile": "*Hiện đang điều tra.\n\nLà thành viên trong hội học sinh. Ngoại hình thuộc hình mẫu chị gái dịu dàng, tốt bụng",
+      "role": "Chưa xác định",
+      "radar_stat": {
+        "visual": 0,
+        "basic_competency": 0,
+        "personality": 0,
+        "behavioral": 0,
+        "speaking": 0
+      }
+    },
+    {
+      "name": "Kohei Nagasaka",
+      "classmate": "11-2",
+      "id_student": "25",
+      "character_color": "#fdf351",
+      "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/6121af15bbe7a1eb672f6909_kohei_tachie-min.png",
+      "birthday": null,
+      "middle_schools": null,
+      "club": null,
+      "assess_suitability": null,
+      "profile": "Là nhân vật chính, người đã cống hiến tất cả mọi thứ cho rom-com. Cậu ấy thực sự tin rằng có thể tạo nên hài kịch lãng mạn trong chính thực tại này và đang cố gắng thực hiện lý tưởng bằng các hành động phi thường của mình. \n\nĐiểm mạnh của cậu ta là tìm hiểu và phân tích dữ liệu. Điểm yếu là khó ứng phó với những sự kiện bất ngờ.",
+      "role": "Nhân vật chính"
+    }
+  ],
+  "volume": [
+    {
+      "volume": 1,
+      "url_VietNam_Version": "https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/289389175_3318656811754600_5794748037513680918_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=Azsxn66YA_oAX_thL1d&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_F6ebnI5XCQv0ZYkikGgGzC9rmMZUcemcmnVJar69X9w&oe=62F88699",
+      "url_Japan_Version": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/6124d97d084c075b4e9d3dca_shoei_01.jpg",
+      "title": "Điều không tưởng được dựng lên từ dữ liệu",
+      "summary": "Phải chăng những độc giả yêu thích light novel đều mơ ước có 'một tuổi học đường vui nhộn với cô bạn gái xinh đẹp'? Nhưng một thứ hão huyền như thế không thể tự nhiên mà xuất hiện ở đời thực được. Muốn ăn thì phải tự lăn vào bếp! Tôi, một người yêu thích light novel – Tôi, Nagasaka Kouhei, sẽ nhuộm đời thực bằng sắc màu romcom!",
+      "isPublish": true,
+      "shop": {
+        "shoppe_shop": null,
+        "tiki_shop": null,
+        "thai_ha_shop": null,
+        "lazada_shop": null
+      }
+    },
+    {
+      "volume": 2,
+      "url_VietNam_Version": null,
+      "url_Japan_Version": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/6124d97d084c0747c59d3dcb_shoei_02.jpg",
+      "title": null,
+      "summary": null,
+      "isPublish": false,
+      "shop": {
+        "shoppe_shop": null,
+        "tiki_shop": null,
+        "thai_ha_shop": null,
+        "lazada_shop": null
+      }
+    },
+    {
+      "volume": 3,
+      "url_VietNam_Version": null,
+      "url_Japan_Version": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/6124d97d2c424f0cdd245489_shoei_03.jpg",
+      "title": null,
+      "summary": null,
+      "isPublish": false,
+      "shop": {
+        "shoppe_shop": null,
+        "tiki_shop": null,
+        "thai_ha_shop": null,
+        "lazada_shop": null
+      }
+    },
+    {
+      "volume": 4,
+      "url_VietNam_Version": null,
+      "url_Japan_Version": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/6124d97dc385408cad6e0d61_shoei_04.jpg",
+      "title": null,
+      "summary": null,
+      "isPublish": false,
+      "shop": {
+        "shoppe_shop": null,
+        "tiki_shop": null,
+        "thai_ha_shop": null,
+        "lazada_shop": null
+      }
+    },
+    {
+      "volume": 5,
+      "url_VietNam_Version": null,
+      "url_Japan_Version": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/622d284e19cc5fa4da1e1a40_shoei_05.jpg",
+      "title": null,
+      "summary": null,
+      "isPublish": false,
+      "shop": {
+        "shoppe_shop": null,
+        "tiki_shop": null,
+        "thai_ha_shop": null,
+        "lazada_shop": null
+      }
+    },
+    {
+      "volume": 6,
+      "url_VietNam_Version": null,
+      "url_Japan_Version": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/62be34d967ffbe1f74cf9ed1_shoei_06.jpg",
+      "title": null,
+      "summary": null,
+      "isPublish": false,
+      "shop": {
+        "shoppe_shop": null,
+        "tiki_shop": null,
+        "thai_ha_shop": null,
+        "lazada_shop": null
+      }
+    }
+  ]
+}
