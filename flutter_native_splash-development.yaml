@@ -1,6 +1,5 @@
 flutter_native_splash:
   color: "#fa98a2"
-  image: assets/favicon.png
-  branding: assets/background/background.png
+  image: assets/background/logo.png
 
   web: true
