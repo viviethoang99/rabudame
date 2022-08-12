@@ -33,7 +33,7 @@ class _LargeScreen extends StatelessWidget {
       children: [
         Positioned(
           top: 0.16.sh,
-          left: left + 450,
+          left: left + 450.r,
           bottom: -0.2.sh,
           child: SizedBox(
             height: 0.9.sh,
@@ -65,7 +65,7 @@ class _SmallScreen extends StatelessWidget {
       children: [
         Positioned(
           top: 0.16.sh,
-          left: 350,
+          left: 700.w,
           bottom: -0.2.sh,
           child: SizedBox(
             child: Assets.background.tachie.image(),
