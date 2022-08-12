@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../util/size_config.dart';
-import 'appbar/appbar.dart';
 import 'first_banner/first_banner_widget.dart';
 import 'footbar/footbar.dart';
 import 'intro_widget/intro_widget.dart';

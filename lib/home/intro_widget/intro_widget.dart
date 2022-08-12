@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../gen/assets.gen.dart';
@@ -148,7 +147,7 @@ class _TextWidget extends StatelessWidget {
       child: Text(
         intro,
         style: GoogleFonts.beVietnamPro(
-          fontSize: 15.sp,
+          fontSize: 15,
           height: 1.4,
           letterSpacing: 0.9,
           background: Paint()..color = Colors.white.withOpacity(0.7),

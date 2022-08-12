@@ -24,6 +24,8 @@ dependencies:
 
   equatable: ^2.0.3
   google_fonts: ^3.0.1
+  go_router: ^4.2.7
+  flutter_native_splash: ^2.2.7
 
 dev_dependencies:
   bloc_test: ^9.0.3
@@ -33,6 +35,7 @@ dev_dependencies:
   flutter_lints: ^2.0.1
   build_runner: ^2.1.11
   flutter_gen_runner:
+  flutter_launcher_icons: "^0.10.0"
 
 flutter:
   uses-material-design: true
@@ -42,6 +45,14 @@ flutter:
     - assets/background/
     - assets/json/
     - assets/character/
+
+flutter_icons:
+  image_path: "assets/favicon.png"
+  web:
+    generate: true
+    image_path: "assets/favicon.png"
+    background_color: "#000000"
+    theme_color: "#000000"
 
 flutter_gen:
   integrations:
