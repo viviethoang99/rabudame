@@ -5,22 +5,22 @@
 
 # Info
 
-This is a clone website [Rabudame]('http://rabudame.com/') code by [Flutter]('https://flutter.dev').
+This is a clone website [Rabudame](http://rabudame.com/) code by [Flutter](https://flutter.dev).
 
-The website demo can be viewed [here]('https://viviethoang99.github.io/rabudame/').
+The website demo can be viewed [here](https://viviethoang99.github.io/rabudame/).
 
 ![Banner](.github/readme-images/banner.png)
 
 # Bugs or Requests
 
-If you encounter any problems feel free to open an [issue](https://github.com//jonbhanson/flutter_native_splash/issues/new?template=bug_report.md). If you feel the library is missing a feature, please raise a [ticket](https://github.com//jonbhanson/flutter_native_splash/issues/new?template=feature_request.md). Pull request are also welcome.
+If you encounter any problems feel free to open an [issue](https://github.com/viviethoang99/rabudame/issues/new). Pull request are also welcome.
 
 
 # Contribute (Đóng góp)
 
 Mình không phải fan bộ này, mới chỉ đọc qua vài chương truyện tranh thôi nên phần thông tin có thể không chuẩn. Nếu các bạn có bất cứ đóng góp nào về dịch thuật nào thì mình rất hoan nghênh.
 
-File json nằm ở assets/json/data.json hoặc tạo yêu cầu [tại đây]("https://github.com/viviethoang99/rabudame/issues/new")
+File json nằm ở assets/json/data.json hoặc tạo yêu cầu [tại đây](https://github.com/viviethoang99/rabudame/issues/new)
 
 1, Character profile format
 

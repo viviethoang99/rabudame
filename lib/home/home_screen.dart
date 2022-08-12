@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
             body: Stack(
               children: [
                 ListView(
-                  physics: const ClampingScrollPhysics(),
+                  physics: const BouncingScrollPhysics(),
                   controller: controller,
                   children: [
                     const FirstBannerWidget(),
