@@ -3,6 +3,7 @@
     {
       "name": "Uenohara Ayano",
       "classmate": "10-5",
+      "avatar": "assets/character/ayano.jpeg",
       "id_student": "6",
       "character_color": "#fa98a2",
       "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/61270708981e804da7dcf3ec_profile_ayano.jpg",
@@ -22,7 +23,7 @@
     },
     {
       "name": "Kiyosato Mei",
-      "avatar": "https://scontent.fhan2-2.fna.fbcdn.net/v/t39.30808-6/296153783_3344409719179309_807829053274045847_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=WAZiWId1E-QAX_eLqeo&tn=18h-6FnEPAkzr9up&_nc_ht=scontent.fhan2-2.fna&oh=00_AT-2pCdPT7xwjrJx-CLesM5aLKPmnm14aDa_dMTdwR4GQw&oe=62FA08FA",
+      "avatar": "assets/character/mei.jpeg",
       "classmate": "10-4",
       "id_student": "10",
       "character_color": "#d2b6ff",
@@ -42,9 +43,10 @@
       }
     },
     {
-      "name": "Katsunuma Ayumi",
+      "name": "Katsunuma AyumiAyumi",
       "classmate": "10-4",
       "id_student": "25",
+      "avatar": "assets/character/ayumi.jpeg",
       "character_color": "#a8d8e6",
       "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/612707074a79a42d9a7e9b8b_profile_ayumi.jpg",
       "birthday": "2/12",
@@ -67,6 +69,7 @@
       "id_student": "25",
       "character_color": "#f0a053",
       "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/612707075c0c047735084282_profile_sachi.jpg",
+      "avatar": "assets/character/sachi.jpeg",
       "birthday": null,
       "middle_schools": null,
       "club": "Hội học sinh",
@@ -85,6 +88,7 @@
       "name": "Kohei Nagasaka",
       "classmate": "11-2",
       "id_student": "25",
+      "avatar": "assets/character/kohei.jpeg",
       "character_color": "#fdf351",
       "url_image": "https://uploads-ssl.webflow.com/6121aa0be10591c7fbd08d2d/6121af15bbe7a1eb672f6909_kohei_tachie-min.png",
       "birthday": null,
