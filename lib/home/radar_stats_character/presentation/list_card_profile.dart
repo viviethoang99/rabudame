@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../gen/assets.gen.dart';
@@ -30,7 +31,7 @@ class ListCardProfileWidget extends StatelessWidget {
       padding: const EdgeInsets.symmetric(
         vertical: 40,
         horizontal: 20,
-      ),
+      ).r,
       child: BlocProvider<RadarStatsCubit>(
         create: (context) => RadarStatsCubit()..getData(),
         child: BlocBuilder<RadarStatsCubit, RadarStatsState>(
@@ -107,53 +108,38 @@ class _SmallScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
-        image: DecorationImage(
-          colorFilter: const ColorFilter.mode(
-            Color(0XFFfa98a2),
-            BlendMode.dstATop,
-          ),
-          image: AssetImage(Assets.background.background.path),
-          fit: BoxFit.fitHeight,
-          alignment: Alignment.centerLeft,
+        color: Colors.white,
+        border: Border.all(
+          color: Colors.black,
+          width: 2,
         ),
       ),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          border: Border.all(
-            color: Colors.black,
-            width: 2,
+      child: Column(
+        children: [
+          Container(
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              color: Colors.black,
+            ),
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            margin: const EdgeInsets.only(bottom: 15),
+            child: Text(
+              'Nhân vật',
+              style: GoogleFonts.beVietnamPro(
+                color: Colors.white,
+                fontSize: 20,
+              ),
+              textAlign: TextAlign.center,
+            ),
           ),
-        ),
-        child: Column(
-          children: [
-            Container(
-              width: double.infinity,
-              decoration: const BoxDecoration(
-                color: Colors.black,
-              ),
-              padding: const EdgeInsets.symmetric(vertical: 20),
-              margin: const EdgeInsets.only(bottom: 15),
-              child: Text(
-                'Nhân vật',
-                style: GoogleFonts.beVietnamPro(
-                  color: Colors.white,
-                  fontSize: 20,
-                ),
-                textAlign: TextAlign.center,
-              ),
+          ...List.generate(
+            state.listProfile.length,
+            (index) => CardProfileWidget(
+              profile: state.listProfile[index],
             ),
-            ...List.generate(
-              state.listProfile.length,
-              (index) => CardProfileWidget(
-                profile: state.listProfile[index],
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
