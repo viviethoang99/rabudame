@@ -146,10 +146,7 @@ class _SmallScreen extends StatelessWidget {
           ),
         ),
         Container(
-          padding: const EdgeInsets.symmetric(
-            horizontal: 50,
-            vertical: 50,
-          ),
+          padding: const EdgeInsets.all(50).r,
           decoration: BoxDecoration(
             color: Colors.white,
             border: Border.all(
