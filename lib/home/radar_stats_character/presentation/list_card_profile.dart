@@ -126,6 +126,7 @@ class _SmallScreen extends StatelessWidget {
               style: GoogleFonts.beVietnamPro(
                 color: Colors.white,
                 fontSize: 20,
+                fontWeight: FontWeight.bold,
               ),
               textAlign: TextAlign.center,
             ),

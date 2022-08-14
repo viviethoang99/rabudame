@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../data/types/layout.dart';
@@ -84,7 +83,7 @@ class _IconSmallWidget extends StatelessWidget {
         style: ElevatedButton.styleFrom(
           shape: const CircleBorder(),
           primary: Colors.white,
-          padding: const EdgeInsets.all(20).r,
+          padding: const EdgeInsets.all(15),
         ),
         child: const Icon(
           Icons.reorder,
