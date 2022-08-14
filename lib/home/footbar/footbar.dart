@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../gen/assets.gen.dart';
 import '../../util/reponsiveness.dart';
+
+final urlGithub = Uri.parse(
+  'https://github.com/viviethoang99/rabudame/issues/new',
+);
 
 class FootBarWidget extends StatelessWidget {
   const FootBarWidget({Key? key}) : super(key: key);
@@ -36,14 +41,27 @@ class _LargeScreen extends StatelessWidget {
             'Nhà phát triển không có bất kì liên kết gì '
             'với nhà cung cấp nội dung.\n'
             '(The developer does not have any affiliation '
-            'with the content providers available.)',
+            'with the content providers available)',
             style: GoogleFonts.beVietnamPro(
               color: Colors.white,
               fontSize: 15,
             ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox.shrink()
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: GestureDetector(
+              onTap: () => launchUrl(urlGithub),
+              child: Text(
+                'Góp ý',
+                style: GoogleFonts.beVietnamPro(
+                  fontSize: 17,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
@@ -65,14 +83,29 @@ class _SmallScreen extends StatelessWidget {
             'Nhà phát triển không có bất kì liên kết gì '
             'với nhà cung cấp nội dung.\n'
             '(The developer does not have any affiliation '
-            'with the content providers available.)',
+            'with the content providers available)',
             style: GoogleFonts.beVietnamPro(
               color: Colors.white,
               fontSize: 15,
             ),
             textAlign: TextAlign.center,
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
+          Padding(
+            padding: const EdgeInsets.all(10),
+            child: GestureDetector(
+              onTap: () => launchUrl(urlGithub),
+              child: Text(
+                'Góp ý',
+                style: GoogleFonts.beVietnamPro(
+                  fontSize: 17,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 10),
           Assets.background.logo.image(
             width: 200,
           ),

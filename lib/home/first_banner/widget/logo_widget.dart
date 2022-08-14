@@ -25,7 +25,7 @@ class LogoWidget extends StatelessWidget {
           ),
           const SizedBox(height: 30),
           Container(
-            width: 0.25.sh,
+            width: 0.4.sh,
             padding: const EdgeInsets.only(left: 80).r,
             child: Assets.background.author.image(),
           ),

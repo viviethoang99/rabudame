@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../data/models/profile_model.dart';
 import '../../../util/reponsiveness.dart';
@@ -70,7 +71,7 @@ class _SmallScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Padding(
       padding: const EdgeInsets.symmetric(
         horizontal: 15,
         vertical: 30,
@@ -90,12 +91,20 @@ class _SmallScreen extends StatelessWidget {
           const TitleWidget(title: 'Vai trò'),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 10),
-            child: Text(profile.role),
+            child: Text(
+              profile.role,
+              style: GoogleFonts.beVietnamPro(),
+            ),
           ),
           const TitleWidget(title: 'Profile'),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10),
-            child: Text(profile.profile),
+            padding: const EdgeInsets.all(10),
+            child: Text(
+              profile.profile,
+              style: GoogleFonts.beVietnamPro(
+                fontSize: 15,
+              ),
+            ),
           ),
           if (profile.radarStat != null) const TitleWidget(title: 'Dữ liệu'),
           if (profile.radarStat != null)

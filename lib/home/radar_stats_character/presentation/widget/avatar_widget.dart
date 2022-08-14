@@ -29,8 +29,8 @@ class AvatarWidget extends StatelessWidget {
                   width: 1.5,
                 ),
               ),
-              width: 350,
-              height: 350,
+              width: constraints.maxWidth,
+              height: constraints.maxWidth,
               child: _ImageWidget(
                 url: avatar,
               ),
