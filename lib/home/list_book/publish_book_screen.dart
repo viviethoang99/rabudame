@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_layout_grid/flutter_layout_grid.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../gen/assets.gen.dart';
 import '../../util/reponsiveness.dart';
 import 'application/list_book/list_book_cubit.dart';
-import 'widget/list_book_screen.dart';
+import 'widget/book_item.dart';
 
-class ListBookWidget extends StatelessWidget {
-  const ListBookWidget({Key? key}) : super(key: key);
+class PublishBookScreen extends StatelessWidget {
+  const PublishBookScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,22 +28,10 @@ class ListBookWidget extends StatelessWidget {
         ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50).r,
-      child: BlocProvider<ListBookCubit>(
-        create: (context) => ListBookCubit()..getData(),
-        child: const Center(
-          child: ResponsiveWidget(
-            largeScreen: _LargeScreen(
-              mainAxisExtent: 900,
-              crossAxisCount: 2,
-              maxWidth: 1000,
-            ),
-            mediumScreen: _LargeScreen(
-              mainAxisExtent: 700,
-              crossAxisCount: 2,
-              maxWidth: 724,
-            ),
-            smallScreen: _SmallScreen(),
-          ),
+      child: const Center(
+        child: ResponsiveWidget(
+          largeScreen: _LargeScreen(maxWidth: 1000),
+          smallScreen: _SmallScreen(),
         ),
       ),
     );
@@ -52,14 +41,10 @@ class ListBookWidget extends StatelessWidget {
 class _LargeScreen extends StatelessWidget {
   const _LargeScreen({
     Key? key,
-    required this.mainAxisExtent,
     required this.maxWidth,
-    required this.crossAxisCount,
   }) : super(key: key);
 
-  final double mainAxisExtent;
   final double maxWidth;
-  final int crossAxisCount;
 
   @override
   Widget build(BuildContext context) {
@@ -72,10 +57,10 @@ class _LargeScreen extends StatelessWidget {
           width: double.infinity,
           padding: const EdgeInsets.symmetric(vertical: 20),
           color: Colors.black,
-          child: const Text(
+          child: Text(
             'Xuất bản',
             textAlign: TextAlign.center,
-            style: TextStyle(
+            style: GoogleFonts.beVietnamPro(
               color: Colors.white,
               fontSize: 20,
               fontWeight: FontWeight.bold,
@@ -86,7 +71,7 @@ class _LargeScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(
             horizontal: 50,
             vertical: 50,
-          ),
+          ).r,
           constraints: BoxConstraints(maxWidth: maxWidth),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -96,23 +81,22 @@ class _LargeScreen extends StatelessWidget {
             ),
           ),
           child: BlocBuilder<ListBookCubit, ListBookState>(
-            builder: (context, state) {
+            builder: (_, state) {
               if (state is ListBookSuccess) {
-                return GridView.builder(
-                  shrinkWrap: true,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: crossAxisCount,
-                    crossAxisSpacing: 20,
-                    mainAxisSpacing: 20,
-                    mainAxisExtent: mainAxisExtent,
+                return LayoutGrid(
+                  columnGap: 20,
+                  rowGap: 20,
+                  columnSizes: [1.fr, 1.fr],
+                  rowSizes: List<IntrinsicContentTrackSize>.generate(
+                    (state.listBook.length / 2).round(),
+                    (int index) => auto,
                   ),
-                  itemCount: state.listBook.length,
-                  itemBuilder: (BuildContext _, int index) {
-                    return BookCoverWidget(
-                      key: ValueKey('VOLUME_${state.listBook[index].volume}'),
+                  children: List<Widget>.generate(
+                    state.listBook.length,
+                    (int index) => BookCoverWidget(
                       item: state.listBook[index],
-                    );
-                  },
+                    ),
+                  ),
                 );
               }
               return const SizedBox.shrink();

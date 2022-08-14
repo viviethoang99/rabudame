@@ -6,12 +6,12 @@ import '../../../../data/data.dart';
 part 'radar_stats_state.dart';
 
 class RadarStatsCubit extends Cubit<RadarStatsState> {
-  RadarStatsCubit() : super(RadarStatsInitial());
+  RadarStatsCubit(this._dataSource) : super(RadarStatsInitial());
 
-  final test = const LocalDataSource();
+  final ILocalDataSource _dataSource;
 
   Future<void> getData() async {
-    final reponsitory = await test.getListProfile();
+    final reponsitory = await _dataSource.getListProfile();
     emit(RadarStatsSucces(reponsitory));
   }
 }

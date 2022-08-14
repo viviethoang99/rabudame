@@ -32,19 +32,16 @@ class ListCardProfileWidget extends StatelessWidget {
         vertical: 40,
         horizontal: 20,
       ).r,
-      child: BlocProvider<RadarStatsCubit>(
-        create: (context) => RadarStatsCubit()..getData(),
-        child: BlocBuilder<RadarStatsCubit, RadarStatsState>(
-          builder: (context, state) {
-            if (state is RadarStatsSucces) {
-              return ResponsiveWidget(
-                largeScreen: _LargeScreen(state: state),
-                smallScreen: _SmallScreen(state: state),
-              );
-            }
-            return const SizedBox.shrink();
-          },
-        ),
+      child: BlocBuilder<RadarStatsCubit, RadarStatsState>(
+        builder: (context, state) {
+          if (state is RadarStatsSucces) {
+            return ResponsiveWidget(
+              largeScreen: _LargeScreen(state: state),
+              smallScreen: _SmallScreen(state: state),
+            );
+          }
+          return const SizedBox.shrink();
+        },
       ),
     );
   }

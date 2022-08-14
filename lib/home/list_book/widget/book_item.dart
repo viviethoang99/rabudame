@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../data/models/publish_model.dart';
@@ -23,12 +24,16 @@ class BookCoverWidget extends StatelessWidget {
       ),
       child: Column(
         children: [
-          CachedNetworkImage(
-            imageUrl: item.urlVietNamVersion ?? item.urlJapanVersion,
-            placeholder: (context, url) => Container(
-              color: Colors.grey,
+          AspectRatio(
+            aspectRatio: 1 / 1.5,
+            child: CachedNetworkImage(
+              imageUrl: item.urlVietNamVersion ?? item.urlJapanVersion,
+              placeholder: (context, url) => Container(
+                color: Colors.grey,
+              ),
+              fit: BoxFit.cover,
+              errorWidget: (context, url, error) => const Icon(Icons.error),
             ),
-            errorWidget: (context, url, error) => const Icon(Icons.error),
           ),
           Container(
             width: double.infinity,
@@ -62,7 +67,7 @@ class BookCoverWidget extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: 14,
               vertical: item.isPublish ? 0 : 50,
-            ),
+            ).r,
             child: Text(
               item.title,
               textAlign: TextAlign.center,
@@ -78,7 +83,7 @@ class BookCoverWidget extends StatelessWidget {
               item.summary,
               style: GoogleFonts.beVietnamPro(),
             ),
-          )
+          ),
         ],
       ),
     );

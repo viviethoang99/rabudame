@@ -16,6 +16,7 @@ class App extends StatelessWidget {
       splitScreenMode: true,
       builder: (BuildContext context, Widget? child) {
         return MaterialApp(
+          title: 'Rabudame',
           theme: ThemeData(
             appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
             colorScheme: ColorScheme.fromSwatch(

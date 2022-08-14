@@ -7,12 +7,12 @@ import '../../../../data/models/publish_model.dart';
 part 'list_book_state.dart';
 
 class ListBookCubit extends Cubit<ListBookState> {
-  ListBookCubit() : super(ListBookInitial());
+  ListBookCubit(this._dataSource) : super(ListBookInitial());
 
-  final test = const LocalDataSource();
+  final  ILocalDataSource _dataSource;
 
   Future<void> getData() async {
-    final reponsitory = await test.getListBook();
+    final reponsitory = await _dataSource.getListBook();
     emit(ListBookSuccess(reponsitory));
   }
 }

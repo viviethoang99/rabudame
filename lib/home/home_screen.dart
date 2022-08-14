@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
+import '../data/data.dart';
 import '../data/types/layout.dart';
 import '../util/size_config.dart';
 import 'appbar/appbar.dart';
 import 'first_banner/first_banner_widget.dart';
 import 'footbar/footbar.dart';
 import 'intro_widget/intro_widget.dart';
-import 'list_book/list_book.dart';
+import 'list_book/application/list_book/list_book_cubit.dart';
+import 'list_book/publish_book_screen.dart';
+import 'radar_stats_character/application/radar_stats_cubit/radar_stats_cubit.dart';
 import 'radar_stats_character/presentation/list_card_profile.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -20,10 +23,12 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   late final AutoScrollController controller;
+  late final LocalDataSource _localDataSource;
 
   @override
   void initState() {
     controller = AutoScrollController();
+    _localDataSource = const LocalDataSource();
     super.initState();
   }
 
@@ -40,14 +45,23 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    return BlocProvider<ScrollIndexCubit>(
-      create: (context) => ScrollIndexCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider<ScrollIndexCubit>(
+          create: (context) => ScrollIndexCubit(),
+        ),
+        BlocProvider<RadarStatsCubit>(
+            create: (context) => RadarStatsCubit(_localDataSource)..getData()),
+        BlocProvider<ListBookCubit>(
+          create: (context) => ListBookCubit(_localDataSource)..getData(),
+        )
+      ],
       child: BlocConsumer<ScrollIndexCubit, int>(
         listener: onTapFunction,
         builder: (context, _) {
           return Scaffold(
             endDrawer: Drawer(
-              backgroundColor: Colors.white70,
+              backgroundColor: const Color.fromARGB(179, 103, 85, 85),
               child: ListView(
                 children: List.generate(
                   AppPage.values.length,
@@ -61,6 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
             body: Stack(
               children: [
                 ListView(
+                  shrinkWrap: true,
                   physics: const BouncingScrollPhysics(),
                   controller: controller,
                   children: [
@@ -78,10 +93,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       child: const ListCardProfileWidget(),
                     ),
                     AutoScrollTag(
-                      key: ValueKey('$ListBookWidget'),
+                      key: ValueKey('$PublishBookScreen'),
                       controller: controller,
                       index: 2,
-                      child: const ListBookWidget(),
+                      child: const PublishBookScreen(),
                     ),
                     const FootBarWidget(),
                   ],
