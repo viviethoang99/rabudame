@@ -15,4 +15,3 @@ jobs:
         with:
           baseHref: /rabudame/
           customArgs: --target lib/main_production.dart
-          webRenderer: html
