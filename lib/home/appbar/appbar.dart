@@ -82,7 +82,7 @@ class _IconSmallWidget extends StatelessWidget {
         onPressed: () => Scaffold.of(context).openEndDrawer(),
         style: ElevatedButton.styleFrom(
           shape: const CircleBorder(),
-          primary: Colors.white,
+          backgroundColor: Colors.white,
           padding: const EdgeInsets.all(15),
         ),
         child: const Icon(

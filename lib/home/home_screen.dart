@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 import '../data/data.dart';
-import '../data/types/layout.dart';
 import '../util/size_config.dart';
 import 'appbar/appbar.dart';
 import 'first_banner/first_banner_widget.dart';
