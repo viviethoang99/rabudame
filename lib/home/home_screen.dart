@@ -80,19 +80,19 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     const FirstBannerWidget(),
                     AutoScrollTag(
-                      key: ValueKey('$IntroWidget'),
+                      key: const ValueKey('IntroWidget'),
                       controller: controller,
                       index: 0,
                       child: const IntroWidget(),
                     ),
                     AutoScrollTag(
-                      key: ValueKey('$ListCardProfileWidget'),
+                      key: const ValueKey('ListCardProfileWidget'),
                       controller: controller,
                       index: 1,
                       child: const ListCardProfileWidget(),
                     ),
                     AutoScrollTag(
-                      key: ValueKey('$PublishBookScreen'),
+                      key: const ValueKey('PublishBookScreen'),
                       controller: controller,
                       index: 2,
                       child: const PublishBookScreen(),
