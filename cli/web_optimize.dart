@@ -257,7 +257,7 @@ class WebOptimizeCommand extends Command<void> {
         const url = new URL(uri);
         src = `${assetBase}${jsManifest[url.pathname.substring(1)]}`;
       } catch (e) {
-        src = `${assetBase}${jsManifest[uri.substring(1)]}`;
+        src = `${assetBase}${jsManifest[uri]}`;
       }
       
       script = document.createElement("script");
@@ -270,7 +270,7 @@ class WebOptimizeCommand extends Command<void> {
     '''
         .replaceAll(
           RegExp('var assetBase = null;'),
-          'var assetBase = "$assetBase;"',
+          'var assetBase = "$assetBase";',
         )
         .replaceAll(
           RegExp('var jsManifest = null;'),

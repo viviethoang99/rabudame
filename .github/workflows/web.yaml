@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2 # Only works with v2
       - uses: subosito/flutter-action@v1
-      - uses: viviethoang99/flutter-gh-pages@v2
+      - uses: viviethoang99/flutter-gh-pages@v3
         with:
           baseHref: /rabudame/
           customArgs: --target lib/main_production.dart
-          assetBase: viviethoang99.github.io/rabudame/
+          assetBase: https://viviethoang99.github.io/web_optimize/
