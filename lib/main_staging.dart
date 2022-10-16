@@ -9,5 +9,5 @@ import 'bootstrap.dart';
 void main() async {
   usePathUrlStrategy();
   await app.loadLibrary();
-  unawaited(bootstrap(app.App.new));
+  unawaited(bootstrap(() => app.App()));
 }
