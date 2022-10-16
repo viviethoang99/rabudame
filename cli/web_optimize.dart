@@ -127,6 +127,10 @@ class WebOptimizeCommand extends Command<void> {
       // Đổi tên file
       final basename = path.basenameWithoutExtension(file.path);
       final extension = path.extension(file.path);
+      // TODO Không đọc được file json ???
+      if (extension == '.json') {
+        return '$basename$extension';
+      }
       return '$basename.$md5Hash$extension';
     }
 
