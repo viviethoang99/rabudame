@@ -1,11 +1,11 @@
 name: rabudame_web
 description: A Very Good Project created by Very Good CLI.
-version: 1.0.0+1
+version: 1.0.0+2
 publish_to: none
 
 environment:
-  sdk: ">=2.18.0 <3.0.0"
-  flutter: 3.3.4
+  sdk: ">=2.18.4 <3.0.0"
+  flutter: 3.3.7
 
 dependencies:
   bloc: ^8.1.0

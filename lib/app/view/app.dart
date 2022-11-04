@@ -18,6 +18,7 @@ class App extends StatelessWidget {
         return MaterialApp(
           title: 'Rabudame',
           theme: ThemeData(
+            useMaterial3: true,
             appBarTheme: const AppBarTheme(color: Color(0xFF13B9FF)),
             colorScheme: ColorScheme.fromSwatch(
               accentColor: const Color(0xFF13B9FF),
