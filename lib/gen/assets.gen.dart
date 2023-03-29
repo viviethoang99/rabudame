@@ -5,7 +5,7 @@
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
-// ignore_for_file: directives_ordering,unnecessary_import
+// ignore_for_file: directives_ordering,unnecessary_import,implicit_dynamic_list_literal,deprecated_member_use
 
 import 'package:flutter/widgets.dart';
 
@@ -41,6 +41,32 @@ class $AssetsBackgroundGen {
   /// File path: assets/background/ten_mili.png
   AssetGenImage get tenMili =>
       const AssetGenImage('assets/background/ten_mili.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [arasuji, author, ayano, background, fourMili, logo, tachie, tenMili];
+}
+
+class $AssetsCharacterGen {
+  const $AssetsCharacterGen();
+
+  /// File path: assets/character/ayano.jpeg
+  AssetGenImage get ayano => const AssetGenImage('assets/character/ayano.jpeg');
+
+  /// File path: assets/character/ayumi.jpeg
+  AssetGenImage get ayumi => const AssetGenImage('assets/character/ayumi.jpeg');
+
+  /// File path: assets/character/kohei.jpeg
+  AssetGenImage get kohei => const AssetGenImage('assets/character/kohei.jpeg');
+
+  /// File path: assets/character/mei.jpeg
+  AssetGenImage get mei => const AssetGenImage('assets/character/mei.jpeg');
+
+  /// File path: assets/character/sachi.jpeg
+  AssetGenImage get sachi => const AssetGenImage('assets/character/sachi.jpeg');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [ayano, ayumi, kohei, mei, sachi];
 }
 
 class $AssetsJsonGen {
@@ -48,12 +74,16 @@ class $AssetsJsonGen {
 
   /// File path: assets/json/data.json
   String get data => 'assets/json/data.json';
+
+  /// List of all assets
+  List<String> get values => [data];
 }
 
 class Assets {
   Assets._();
 
   static const $AssetsBackgroundGen background = $AssetsBackgroundGen();
+  static const $AssetsCharacterGen character = $AssetsCharacterGen();
   static const $AssetsJsonGen json = $AssetsJsonGen();
 }
 
@@ -114,6 +144,8 @@ class AssetGenImage {
       cacheHeight: cacheHeight,
     );
   }
+
+  ImageProvider provider() => AssetImage(_assetName);
 
   String get path => _assetName;
 
