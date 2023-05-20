@@ -111,9 +111,7 @@
           serviceWorkerVersion: serviceWorkerVersion,
         }
       }).then(function (engineInitializer) {
-        return engineInitializer.initializeEngine({
-          "canvasKitBaseUrl": "canvaskit/"
-        });
+        return engineInitializer.initializeEngine();
       }).then(function (appRunner) {
         return appRunner.runApp();
       });
