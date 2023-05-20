@@ -39,8 +39,8 @@ class _LargeScreen extends StatelessWidget {
           filterQuality: FilterQuality.high,
         ),
       ),
-      child: Stack(
-        children: const [
+      child: const Stack(
+        children: [
           CharacterWidget(),
           SellCopiesWidget(),
           LogoWidget(),
@@ -69,8 +69,8 @@ class _MediumScreen extends StatelessWidget {
         ),
       ),
       height: SizeConfig.screenHeight,
-      child: Stack(
-        children: const [
+      child: const Stack(
+        children: [
           CharacterWidget(),
           SellCopiesWidget(),
           LogoWidget(),
@@ -99,11 +99,12 @@ class _SmallScreen extends StatelessWidget {
         ),
       ),
       height: SizeConfig.screenHeight,
-      child: Stack(
-        children: const [
+      child: const Stack(
+        children: [
           CharacterWidget(),
           LogoWidget(),
         ],
       ),
-    );  }
+    );
+  }
 }
