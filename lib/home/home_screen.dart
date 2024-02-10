@@ -73,32 +73,32 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             body: Stack(
               children: [
-                ListView(
-                  shrinkWrap: true,
-                  physics: const BouncingScrollPhysics(),
+                SingleChildScrollView(
                   controller: controller,
-                  children: [
-                    const FirstBannerWidget(),
-                    AutoScrollTag(
-                      key: const ValueKey('IntroWidget'),
-                      controller: controller,
-                      index: 0,
-                      child: const IntroWidget(),
-                    ),
-                    AutoScrollTag(
-                      key: const ValueKey('ListCardProfileWidget'),
-                      controller: controller,
-                      index: 1,
-                      child: const ListCardProfileWidget(),
-                    ),
-                    AutoScrollTag(
-                      key: const ValueKey('PublishBookScreen'),
-                      controller: controller,
-                      index: 2,
-                      child: const PublishBookScreen(),
-                    ),
-                    const FootBarWidget(),
-                  ],
+                  child: Column(
+                    children: [
+                      const FirstBannerWidget(),
+                      AutoScrollTag(
+                        key: const ValueKey('IntroWidget'),
+                        controller: controller,
+                        index: 0,
+                        child: const IntroWidget(),
+                      ),
+                      AutoScrollTag(
+                        key: const ValueKey('ListCardProfileWidget'),
+                        controller: controller,
+                        index: 1,
+                        child: const ListCardProfileWidget(),
+                      ),
+                      AutoScrollTag(
+                        key: const ValueKey('PublishBookScreen'),
+                        controller: controller,
+                        index: 2,
+                        child: const PublishBookScreen(),
+                      ),
+                      const FootBarWidget(),
+                    ],
+                  ),
                 ),
                 const AppBarWidget(),
               ],

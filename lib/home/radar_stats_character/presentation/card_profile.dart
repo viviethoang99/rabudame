@@ -34,7 +34,7 @@ class _LargeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Padding(
       padding: const EdgeInsets.symmetric(vertical: 30),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,

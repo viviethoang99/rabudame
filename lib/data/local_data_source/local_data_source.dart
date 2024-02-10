@@ -26,25 +26,15 @@ class LocalDataSource implements ILocalDataSource {
 
   @override
   Future<ListProfile> getListProfile() async {
-    final result = await getListData('profile');
-    final listData = result
-        .map<ProfileModel>(
-          // ignore: unnecessary_lambdas
-          (e) => ProfileModel.fromJson(e),
-        )
-        .toList();
+    final result = await getListData('profile') as List<Map<String, dynamic>>;
+    final listData = result.map<ProfileModel>(ProfileModel.fromJson).toList();
     return listData;
   }
 
   @override
   Future<ListBook> getListBook() async {
-    final result = await getListData('volume');
-    final listData = result
-        .map<PublishModel>(
-          // ignore: unnecessary_lambdas
-          (e) => PublishModel.fromJson(e),
-        )
-        .toList();
+    final result = await getListData('volume') as List<Map<String, dynamic>>;
+    final listData = result.map<PublishModel>(PublishModel.fromJson).toList();
     return listData;
   }
 }

@@ -36,7 +36,6 @@ class _LargeScreen extends StatelessWidget {
           image: AssetImage(Assets.background.background.path),
           fit: BoxFit.fitHeight,
           alignment: Alignment.centerLeft,
-          filterQuality: FilterQuality.high,
         ),
       ),
       child: const Stack(
@@ -65,7 +64,6 @@ class _MediumScreen extends StatelessWidget {
           image: AssetImage(Assets.background.background.path),
           fit: BoxFit.fitHeight,
           alignment: Alignment.centerLeft,
-          filterQuality: FilterQuality.high,
         ),
       ),
       height: SizeConfig.screenHeight,
@@ -95,7 +93,6 @@ class _SmallScreen extends StatelessWidget {
           image: AssetImage(Assets.background.background.path),
           fit: BoxFit.fitHeight,
           alignment: Alignment.centerLeft,
-          filterQuality: FilterQuality.high,
         ),
       ),
       height: SizeConfig.screenHeight,

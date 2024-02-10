@@ -15,7 +15,7 @@ class LeftWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return ConstrainedBox(
       constraints: const BoxConstraints(
         maxWidth: 350,
       ),

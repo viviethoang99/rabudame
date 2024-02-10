@@ -24,7 +24,6 @@ class ListCardProfileWidget extends StatelessWidget {
           image: AssetImage(Assets.background.background.path),
           repeat: ImageRepeat.repeat,
           alignment: Alignment.topCenter,
-          filterQuality: FilterQuality.medium,
         ),
       ),
       width: double.infinity,

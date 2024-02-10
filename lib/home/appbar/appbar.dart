@@ -50,7 +50,10 @@ class ButtonAppbarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => context.read<ScrollIndexCubit>().onTap(index),
+      onTap: () {
+        Navigator.pop(context);
+        context.read<ScrollIndexCubit>().onTap(index);
+      },
       child: Container(
         width: 200,
         padding: const EdgeInsets.symmetric(vertical: 10),

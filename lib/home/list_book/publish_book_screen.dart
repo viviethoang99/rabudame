@@ -24,7 +24,6 @@ class PublishBookScreen extends StatelessWidget {
           image: AssetImage(Assets.background.background.path),
           repeat: ImageRepeat.repeat,
           alignment: Alignment.topCenter,
-          filterQuality: FilterQuality.medium,
         ),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50).r,

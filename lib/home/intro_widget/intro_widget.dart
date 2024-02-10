@@ -64,7 +64,10 @@ class _LargeScreen extends StatelessWidget {
               ),
               color: const Color(0XFFfcfcff),
               image: DecorationImage(
-                image: AssetImage(Assets.background.arasuji.path),
+                image: ResizeImage(
+                  AssetImage(Assets.background.arasuji.path),
+                  width: 500,
+                ),
                 fit: BoxFit.fitHeight,
                 alignment: Alignment.centerRight,
               ),
